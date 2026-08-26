@@ -1,5 +1,7 @@
 # sanity-plugin-cloudflare-deploy
 
+> This plugin is still in development. The plugin is safe for internal personal usage. Certain API features are still being revised for maximum security in corporate environments.
+
 ## Installation
 
 ```sh
