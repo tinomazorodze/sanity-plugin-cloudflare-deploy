@@ -20,7 +20,7 @@ export function DeploymentHistory({
 }: DeploymentHistoryProps) {
   return (
     <Card padding={[3, 4, 4]} radius={3} border tone="default">
-      <Stack space={4}>
+      <Stack gap={4}>
         {/* Header */}
         <Flex align="center" justify="space-between">
           <Flex align="center" gap={2}>
@@ -63,7 +63,7 @@ export function DeploymentHistory({
             </Flex>
           </Card>
         ) : (
-          <Stack space={3}>
+          <Stack gap={3}>
             {deployments.map((deployment) => (
               <DeploymentItem
                 key={deployment._id || deployment.startedAt}

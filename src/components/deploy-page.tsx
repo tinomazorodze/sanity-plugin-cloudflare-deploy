@@ -80,10 +80,10 @@ function DeployPageInner() {
 
   return (
     <Container width={2} padding={[3, 4, 5]}>
-      <Stack space={5}>
+      <Stack gap={5}>
         {/* Page Title & Intro */}
         <Flex align="center" justify="space-between" wrap="wrap" gap={2}>
-          <Stack space={2}>
+          <Stack gap={2}>
             <Flex align="center" gap={3}>
               <Icons.DeployIcon style={{ fontSize: "1.75em" }} />
               <Heading size={3}>{title}</Heading>
@@ -116,14 +116,14 @@ function DeployPageInner() {
               tone="default"
               shadow={1}
             >
-              <Stack space={4}>
+              <Stack gap={4}>
                 <Flex
                   align="center"
                   justify="space-between"
                   wrap="wrap"
                   gap={3}
                 >
-                  <Stack space={1}>
+                  <Stack gap={1}>
                     <Flex align="center" gap={2}>
                       <Heading size={2}>{selectedTarget.label}</Heading>
                       <Badge tone="default" fontSize={1}>
@@ -150,7 +150,7 @@ function DeployPageInner() {
                 {/* Tracking info or error notice */}
                 {deployError ? (
                   <Card tone="critical" padding={3} radius={2}>
-                    <Stack space={1}>
+                    <Stack gap={1}>
                       <Text size={1} weight="semibold">
                         Deployment failed:
                       </Text>
@@ -181,7 +181,7 @@ function DeployPageInner() {
                   wrap="wrap"
                   gap={3}
                 >
-                  <Stack space={2}>
+                  <Stack gap={2}>
                     <Text size={0} weight="semibold" muted>
                       LAST DEPLOYMENT ({lastDeployment.environment})
                     </Text>
