@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Card,
   Flex,
@@ -9,9 +9,12 @@ import {
   Avatar,
   Badge,
 } from "@sanity/ui";
-import { LaunchIcon, ChevronDownIcon, ChevronUpIcon, UserIcon } from "./icons";
 import type { DeploymentRecord } from "../types";
 import { DeploymentStatusBadge } from "./deployment-status-badge";
+import LaunchIcon from "@sanity/icons/Launch";
+import ChevronUpIcon from "@sanity/icons/ChevronUp";
+import ChevronDownIcon from "@sanity/icons/ChevronDown";
+import UserIcon from "@sanity/icons/User";
 
 interface DeploymentItemProps {
   deployment: DeploymentRecord;

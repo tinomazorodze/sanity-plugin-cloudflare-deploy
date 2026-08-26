@@ -1,6 +1,5 @@
-import React from "react";
+import InboxIcon from "@sanity/icons/Inbox";
 import { Button, Spinner, Flex, Text } from "@sanity/ui";
-import { Icons } from "./icons";
 
 interface DeployButtonProps {
   onClick: () => void;
@@ -29,7 +28,7 @@ export function DeployButton({
         {isDeploying ? (
           <Spinner size={1} />
         ) : (
-          <Icons.DeployIcon style={{ fontSize: "1.25em" }} />
+          <InboxIcon style={{ fontSize: "1.25em" }} />
         )}
         <Text weight="bold" size={2}>
           {isDeploying ? "Deploying..." : label}

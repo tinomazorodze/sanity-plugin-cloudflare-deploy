@@ -45,10 +45,10 @@
   },
   "dependencies": {
     "@sanity/icons": "^5.2.1",
-    "@sanity/ui": "^4.0.6",
-    "lucide-react": "^1.34.0"
+    "@sanity/ui": "^4.0.6"
   },
   "devDependencies": {
+    "@sanity/browserslist-config": "^1.0.5",
     "@sanity/pkg-utils": "^12.3.2",
     "@sanity/plugin-kit": "^10.0.8",
     "@types/react": "^19.2.18",
@@ -73,5 +73,6 @@
       ".": "./dist/index.js",
       "./package.json": "./package.json"
     }
-  }
+  },
+  "browserslist": "extends @sanity/browserslist-config"
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Flex, Stack, Text, Select, Badge } from "@sanity/ui";
 import type { NormalizedDeployTarget } from "../types";
 

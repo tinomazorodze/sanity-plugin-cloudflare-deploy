@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import {
   Container,
   Card,
@@ -9,7 +9,6 @@ import {
   Badge,
   Inline,
 } from "@sanity/ui";
-import { Icons } from "./icons";
 import { InfoOutlineIcon } from "@sanity/icons/InfoOutline";
 import { LaunchIcon } from "@sanity/icons/Launch";
 import type { Tool } from "sanity";
@@ -26,6 +25,7 @@ import { DeploymentStatusBadge } from "./deployment-status-badge";
 import { DeploymentHistory } from "./deployment-history";
 import { TargetSelector } from "./target-selector";
 import { ConfigWarning } from "./config-warning";
+import InboxIcon from "@sanity/icons/Inbox";
 
 export interface DeployPageProps {
   tool?: Tool<CloudflareDeployToolConfig>;
@@ -85,7 +85,7 @@ function DeployPageInner() {
         <Flex align="center" justify="space-between" wrap="wrap" gap={2}>
           <Stack gap={2}>
             <Flex align="center" gap={3}>
-              <Icons.DeployIcon style={{ fontSize: "1.75em" }} />
+              <InboxIcon style={{ fontSize: "1.75em" }} />
               <Heading size={3}>{title}</Heading>
             </Flex>
             <Text size={1} muted>

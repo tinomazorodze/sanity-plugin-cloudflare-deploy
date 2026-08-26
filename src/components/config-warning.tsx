@@ -1,6 +1,5 @@
-import React from "react";
 import { Card, Stack, Flex, Heading, Text, Box } from "@sanity/ui";
-import { WarningOutlineIcon } from "./icons";
+import WarningOutlineIcon from "@sanity/icons/WarningOutline";
 
 interface ConfigWarningProps {
   errors: string[];

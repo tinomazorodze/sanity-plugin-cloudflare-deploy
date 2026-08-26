@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Stack, Flex, Heading, Text, Button, Spinner } from "@sanity/ui";
 import { RefreshIcon } from "@sanity/icons/Refresh";
 import { ClockIcon } from "@sanity/icons/Clock";
