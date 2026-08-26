@@ -1,0 +1,73 @@
+{
+  "name": "sanity-plugin-cloudflare-deploy",
+  "version": "0.0.1",
+  "description": "Sanity Studio plugin for triggering and monitoring Cloudflare Pages deployments via build webhooks and API.",
+  "keywords": [
+    "sanity",
+    "sanity-plugin",
+    "cloudflare",
+    "cloudflare-pages",
+    "deploy",
+    "build-hook",
+    "webhooks",
+    "studio-tool"
+  ],
+  "homepage": "https://github.com/tinomazorodze/sanity-plugin-cloudflare-deploy#readme",
+  "bugs": {
+    "url": "https://github.com/tinomazorodze/sanity-plugin-cloudflare-deploy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tinomazorodze/sanity-plugin-cloudflare-deploy.git"
+  },
+  "license": "MIT",
+  "author": "Tino Mazorodze <tinomazorodze.mt@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "plugin-kit verify-package --silent && pkg-utils build --strict --check --clean",
+    "format": "oxfmt",
+    "link-watch": "plugin-kit link-watch",
+    "lint": "oxlint",
+    "prepublishOnly": "npm run build",
+    "watch": "pkg-utils watch --strict"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@sanity/pkg-utils": "^12.3.2",
+    "@sanity/plugin-kit": "^10.0.8",
+    "@types/react": "^19.2.18",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sanity": "^6.11.0",
+    "styled-components": "^6.5.3",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "sanity": "^5 || ^6.0.0-0"
+  },
+  "engines": {
+    "node": ">=20.19 <22 || >=22.12"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
+  }
+}
