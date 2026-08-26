@@ -12,11 +12,11 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import { defineConfig } from "sanity";
-import { myPlugin } from "sanity-plugin-cloudflare-deploy";
+import { cloudflareDeployTool } from "sanity-plugin-cloudflare-deploy";
 
 export default defineConfig({
   //...
-  plugins: [myPlugin({})],
+  plugins: [cloudflareDeployTool({})],
 });
 ```
 

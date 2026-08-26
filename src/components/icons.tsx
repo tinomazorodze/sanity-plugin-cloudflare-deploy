@@ -1,4 +1,21 @@
-function DeployIcon({ ...props }) {
+import React from "react";
+import {
+  Check,
+  X,
+  RefreshCw,
+  AlertTriangle,
+  Send,
+  HelpCircle,
+  ExternalLink,
+  ChevronDown,
+  ChevronUp,
+  User,
+  History,
+  Info,
+  Rocket,
+} from "lucide-react";
+
+export function DeployIcon({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-sanity-icon="true"
@@ -35,6 +52,71 @@ function DeployIcon({ ...props }) {
   );
 }
 
+export function CheckmarkIcon(props: any) {
+  return <Check size={16} {...props} />;
+}
+
+export function CloseIcon(props: any) {
+  return <X size={16} {...props} />;
+}
+
+export function SyncIcon(props: any) {
+  return <RefreshCw size={16} {...props} />;
+}
+
+export function WarningOutlineIcon(props: any) {
+  return <AlertTriangle size={16} {...props} />;
+}
+
+export function PublishIcon(props: any) {
+  return <Send size={16} {...props} />;
+}
+
+export function HelpCircleIcon(props: any) {
+  return <HelpCircle size={16} {...props} />;
+}
+
+export function LaunchIcon(props: any) {
+  return <ExternalLink size={16} {...props} />;
+}
+
+export function ChevronDownIcon(props: any) {
+  return <ChevronDown size={16} {...props} />;
+}
+
+export function ChevronUpIcon(props: any) {
+  return <ChevronUp size={16} {...props} />;
+}
+
+export function UserIcon(props: any) {
+  return <User size={16} {...props} />;
+}
+
+export function RefreshIcon(props: any) {
+  return <RefreshCw size={16} {...props} />;
+}
+
+export function HistoryIcon(props: any) {
+  return <History size={16} {...props} />;
+}
+
+export function InfoOutlineIcon(props: any) {
+  return <Info size={16} {...props} />;
+}
+
 export const Icons = {
   DeployIcon,
+  CheckmarkIcon,
+  CloseIcon,
+  SyncIcon,
+  WarningOutlineIcon,
+  PublishIcon,
+  HelpCircleIcon,
+  LaunchIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+  UserIcon,
+  RefreshIcon,
+  HistoryIcon,
+  InfoOutlineIcon,
 };
