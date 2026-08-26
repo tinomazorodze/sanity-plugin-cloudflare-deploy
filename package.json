@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-cloudflare-deploy",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Sanity Studio plugin for triggering and monitoring Cloudflare Pages deployments via build webhooks and API.",
   "keywords": [
     "sanity",
